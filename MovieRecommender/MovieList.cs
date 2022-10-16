@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MovieRecommender
+{
+    public class MovieList
+    {
+        private List<Movie> _movies = new List<Movie>(); //we initialize it empty, otherwise value will be null
+        public void Add(Movie movie)
+        {
+            _movies.Add(movie);
+        }
+
+        public void Delete(Movie movie)
+        {
+            _movies.Remove(movie);
+        }
+
+        public IEnumerable<Movie> Recommend(string query) //signature, by which criteria we will find a movie. IEnumerable - validation that you cannot change directly the list of movies
+        {
+            return _movies.Where(x => x.Title.Contains(query, StringComparison.InvariantCultureIgnoreCase));
+            return new List<Movie>();
+        }
+    }
+}
