@@ -35,6 +35,9 @@ namespace MovieRecommender.ConsoleApp
         {
             var keywords = new List<string>();
 
+            Console.WriteLine("Please add some keywords");
+            Console.WriteLine("________________________");
+
             while(true) //we will not know how many keywords, so we need a loop
             {
                 Console.Write("Please enter keyword: ");
