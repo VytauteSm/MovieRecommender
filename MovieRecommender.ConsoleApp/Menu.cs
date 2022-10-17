@@ -8,7 +8,7 @@ namespace MovieRecommender.ConsoleApp
 {
     internal static class Menu //static, so we could call it
     {
-        public static readonly string Dash = "------------------------";
+        public static readonly string Dash = "**************************************";
         internal static string GetUserMenuSelection()
         {
             while (true)
