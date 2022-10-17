@@ -13,7 +13,7 @@
                 switch (menuSelection) //cause our menu is predefined
                 {
                     case "A":
-
+                        AddMovieHelper.Start(movieList); //call the method
                         break;
                     case "D":
                         break;
