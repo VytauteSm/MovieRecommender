@@ -16,8 +16,10 @@
                         AddMovieHelper.Start(movieList); //call the method
                         break;
                     case "D":
+                        DeleteMovieHelper.Start(movieList);
                         break;
                     case "F":
+                        FindRecommendationHelper.Start(movieList);
                         break;
                     case "E":
                         return;

@@ -13,6 +13,10 @@ namespace MovieRecommender
             Title = title;
         }
 
+        public Movie()
+        {
+        }
+
         public string Title { get; set; }
 
         public GenreEnum Genre { get; set; }
@@ -25,7 +29,5 @@ namespace MovieRecommender
         {
             return $"{Title}\n{Genre}";
         }
-
-
     }
 }
