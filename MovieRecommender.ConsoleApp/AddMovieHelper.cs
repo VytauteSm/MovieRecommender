@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieRecommender;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace MovieRecommender.ConsoleApp
 
             var keywords = GetKeywords(); //we are calling the method
 
-            var movie = new Movie(title)
+            var movie = new Movie()
             {
                 Genre = (GenreEnum)Enum.Parse(typeof(GenreEnum), genre), //which one we would like to cast (typeof(GenreEnum), then it understands which one it is (genre) 
                 Rating = int.Parse(rating), //validation?
@@ -36,9 +37,9 @@ namespace MovieRecommender.ConsoleApp
             var keywords = new List<string>();
 
             Console.WriteLine("Please add some keywords");
-            Console.WriteLine("________________________");
+            Console.WriteLine(Menu.Dash);
 
-            while(true) //we will not know how many keywords, so we need a loop
+            while (true) //we will not know how many keywords, so we need a loop
             {
                 Console.Write("Please enter keyword: ");
                 var keyword = Console.ReadLine();

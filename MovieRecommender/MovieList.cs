@@ -14,6 +14,8 @@ namespace MovieRecommender
         }
 
         private List<Movie> _movies = new List<Movie>(); //we initialize it empty, otherwise value will be null
+
+        public List<Movie> Movies { get { return _movies; } }
         public void Add(Movie movie)
         {
             _movies.Add(movie);
@@ -49,3 +51,4 @@ namespace MovieRecommender
 
         }
     }
+}

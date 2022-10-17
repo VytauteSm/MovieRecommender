@@ -7,15 +7,22 @@ using System.Threading.Tasks;
 namespace MovieRecommender.ConsoleApp
 {
     internal static class Menu //static, so we could call it
+
+       
     {
+
+        public static readonly string Dash = "------------------------";
+
         internal static string GetUserMenuSelection()
         {
             while (true)
             {
+                Console.WriteLine(Dash);
                 Console.WriteLine("1 - Add a new movie [A]");
                 Console.WriteLine("2 - Delete a movie [D]");
                 Console.WriteLine("3 - Find a movie recommendation [F]");
                 Console.WriteLine("4 - Exit [E]");
+                Console.WriteLine(Dash);
 
                 Console.Write("Please select a menu item: ");
 

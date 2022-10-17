@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace MovieRecommender
 {
@@ -11,6 +7,10 @@ namespace MovieRecommender
         public Movie(string title)
         {
             Title = title;
+        }
+
+        public Movie()
+        {
         }
 
         public string Title { get; set; }

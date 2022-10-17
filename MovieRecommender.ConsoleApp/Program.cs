@@ -1,4 +1,7 @@
-﻿namespace MovieRecommender.ConsoleApp
+﻿
+using MovieRecommender;
+
+namespace MovieRecommender.ConsoleApp
 {
     internal class Program
     {
@@ -14,10 +17,12 @@
                 {
                     case "A":
                         AddMovieHelper.Start(movieList); //call the method
-                        break;
+                        break;                      
                     case "D":
+                        RemoveMovie.Start(movieList);
                         break;
                     case "F":
+                        RecommendMovie.Start(movieList);
                         break;
                     case "E":
                         return;
