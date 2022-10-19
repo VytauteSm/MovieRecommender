@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<movies>
+	<movie>
+		<title>Avatar</title>
+		<genre>Fantasy</genre>
+		<keywords>
+			<keyword>blue aliens</keyword>
+			<keyword>alien planet</keyword>
+		</keywords>
+		<rating>5</rating>
+	</movie>
+	<movie>
+		<title>Avatar 2</title>
+		<genre>Fantasy</genre>
+		<keywords>
+			<keyword>blue aliens</keyword>
+			<keyword>love</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>Harry Potter 1</title>
+		<genre>Adventure</genre>
+		<keywords>
+			<keyword>wizards</keyword>
+			<keyword>children</keyword>
+	</keywords>
+		<rating>5</rating>
+	</movie>
+</movies>

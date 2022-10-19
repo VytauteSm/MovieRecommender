@@ -15,7 +15,7 @@ namespace MovieRecommender
 
         public MovieList(string url)
         {
-            Load(url);
+            Load(url); //with url argument
         }
 
         private List<Movie> _movies = new List<Movie>(); //we initialize it empty, otherwise value will be null
@@ -33,11 +33,16 @@ namespace MovieRecommender
 
         public IEnumerable<Movie> SearchTitle(string query)
         {
-            return _movies.Where(b => b.Title.Contains(query, StringComparison.InvariantCultureIgnoreCase));
+            return _movies.Where(b => b.Title.Contains(query, StringComparison.InvariantCultureIgnoreCase)); //We are looking for movies, where title contains query we entered on a webpage
         }
         public IEnumerable<Movie> SearchGenre(GenreEnum genre)
         {
             return _movies.Where(b => b.Genre == genre);
+        }
+
+        public IEnumerable<Movie> SearchKeyword(string query, IEnumerable<Movie> movies)
+        {
+            return _movies.Where(x => x.Keywords.Any(z => z.Contains(query, StringComparison.InvariantCultureIgnoreCase))); //we are looking with Any
         }
 
         //public IEnumerable<Movie> Search(string query) //signature, by which criteria we will find a movie. IEnumerable - validation that you cannot change directly the list of movies. Istrinti visa metoda
@@ -63,14 +68,14 @@ namespace MovieRecommender
         //    });
         //}
 
-        private void Load()
+        private void Load() //without arguments
         {
             _movies = XmlMovieHelper.Load();
         }
 
         private void Load(string url)
         {
-            _movies = XmlMovieHelper.Load(url);
+            _movies = XmlMovieHelper.Load(url); //we read from url
         }
     }
 }
