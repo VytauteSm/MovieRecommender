@@ -112,6 +112,5 @@ namespace MovieRecommender.ConsoleApp
         {
             return movies.Where(x => x.Genre.ToString().Contains(query, StringComparison.InvariantCultureIgnoreCase));
         }
-
     }
 }

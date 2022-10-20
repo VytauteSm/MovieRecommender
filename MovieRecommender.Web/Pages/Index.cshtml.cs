@@ -19,11 +19,22 @@ namespace MovieRecommender.Web.Pages
             var a = "";
         }
 
-        public void OnPost() //we call this method to send data for search
+        public void OnPost() //we call this method to send data for search. This method will be executed, when we submit form in web
         {
             var query = Request.Form["findQuery"].ToString(); //we are getting query value
+            var searchType = Request.Form["searchType"].ToString();
 
-            Movies = Program.List.SearchTitle(query);
+            if (searchType == "T")
+            {
+                Movies = Program.List.SearchTitle(query);
+            } else if (searchType == "K")
+            {
+                Movies = Program.List.SearchKeyword(query, Movies); //need to correct?
+            }
+            else
+            {
+                throw new ArgumentException("No such search type");
+            }
         }
     }
 }

@@ -13,11 +13,26 @@
 <form method="post"> @*we use method post, sent to server, but not seen in address bar*@
     <div class="mb-3 row"> @*size, depending on screen, will adjust text to next lines*@
         <div class="col-sm-10">
-        <input type="text" class="form-control" name="findQuery" id="findQuery" placeholder="Title">
+        <input type="text" class="form-control" name="findQuery" id="findQuery" placeholder="Search keyword">
         </div>
         <div class="col-sm-2"
         <button type="submit" class="btn btn-primary">Find</button>
     </div>
+    </div>
+    <div class="mb-3 row">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="searchType" id="flexRadioDefault" checked value="T">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Title
+                </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="searchType" id="flexRadioDefault2" value="K">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Keyword
+            </label>
+        </div>
+
     </div>
 </form>
 
