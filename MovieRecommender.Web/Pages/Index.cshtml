@@ -1,4 +1,6 @@
-﻿@page
+﻿@*Visual part:*@
+
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Movie list";
@@ -18,3 +20,15 @@
     </div>
     </div>
 </form>
+
+@foreach (var movie in Model.Movies) //we go with a loop, using razor syntax
+{
+    <p><h2>@movie.Title</h2><br>
+        <h4>@movie.Genre</h4>
+        @foreach (var keyword in movie.Keywords)
+        {
+            <h6>@keyword</h6>
+        }
+        </p>
+    //we print some data
+}

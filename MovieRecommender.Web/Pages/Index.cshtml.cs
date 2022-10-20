@@ -7,6 +7,8 @@ namespace MovieRecommender.Web.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public IEnumerable<Movie> Movies { get; set; } = Enumerable.Empty<Movie>(); //our movie list initially would be empty list. We take results and asign to book property
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -21,7 +23,7 @@ namespace MovieRecommender.Web.Pages
         {
             var query = Request.Form["findQuery"].ToString(); //we are getting query value
 
-            var result = Program.List.SearchTitle(query);
+            Movies = Program.List.SearchTitle(query);
         }
     }
 }
