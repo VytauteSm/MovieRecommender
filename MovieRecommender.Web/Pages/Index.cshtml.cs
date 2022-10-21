@@ -50,7 +50,7 @@ namespace MovieRecommender.Web.Pages
                 Movies = Program.List.SearchKeyword(query, Movies); //need to correct?
             } else if(searchType == "G")
             {
-                var genre = (GenreEnum)Enum.Parse(typeof(GenreEnum), searchGenre); //exception!!!
+                var genre = (GenreEnum)Enum.Parse(typeof(GenreEnum), searchGenre);
                 Movies = Program.List.SearchGenre(genre);
             }
             else
