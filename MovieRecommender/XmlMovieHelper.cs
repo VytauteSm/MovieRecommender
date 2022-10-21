@@ -19,7 +19,7 @@ namespace MovieRecommender
                 Title = x.Element("title").Value,
                 Keywords = x.Descendants("keyword").Select(k => k.Value).ToArray(), //we select all the keywords, then select only one and text value
                 Genre = Enum.Parse<GenreEnum>(x.Element("genre").Value, true)
-            }).ToList();
+            }).ToList(); //add Rating?
         }
     }
 }

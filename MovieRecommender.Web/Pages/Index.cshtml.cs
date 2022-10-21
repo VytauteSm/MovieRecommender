@@ -9,6 +9,7 @@ namespace MovieRecommender.Web.Pages
 
         public IEnumerable<Movie> Movies { get; set; } = Enumerable.Empty<Movie>(); //our movie list initially would be empty list. We take results and asign to book property
 
+        public string SearchType { get; set; } = "T"; //represents search by title
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -33,7 +34,7 @@ namespace MovieRecommender.Web.Pages
             }
             else
             {
-                throw new ArgumentException("No such search type");
+                throw new ArgumentException("No such search type", "searchType"); //handle cases when input is incorrect
             }
         }
     }
