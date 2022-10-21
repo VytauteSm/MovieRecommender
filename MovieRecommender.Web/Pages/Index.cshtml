@@ -10,23 +10,24 @@
     <h1 class="display-4">Find a movie</h1>
 </div>
 
-<form method="post">
+<form method="post" id="mainForm">
     @*we use method post, sent to server, but not seen in address bar*@
+    <input type="hidden" value="" id="searchTypeSelected" name="searchTypeSelected" />
     <div class="mb-3 row">
         <div class="form-check">
-            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault1" checked value="T">
+            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault1" @(Model.SearchType == "T" ? "checked" : "") value="T">
             <label class="form-check-label" for="flexRadioDefault1">
                 Title
             </label>
         </div>
         <div class="form-check">
-            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault2" value="K">
+            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault2" @(Model.SearchType == "K" ? "checked" : "") value="K">
             <label class="form-check-label" for="flexRadioDefault2">
                 Keyword
             </label>
         </div>
         <div class="form-check">
-            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault3" value="G">
+            <input onclick="selectSearchType(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault3" @(Model.SearchType == "G" ? "checked" : "") value="G">
             <label class="form-check-label" for="flexRadioDefault3">
                 Genre
             </label>
@@ -36,18 +37,18 @@
         @*size, depending on screen, will adjust text to next lines*@
         <div class="col-sm-10">
 
-            @*@if (Model.SearchType == "T" || Model.SearchType == "K")
-            {*@
-                <input type="text" required class="form-control" name="findQuery" id="findQuery" placeholder="Search keyword">
-           @* }
+            @if (Model.SearchType == "T" || Model.SearchType == "K")
+            {
+                <input type="text" required class="form-control" name="searchQuery" id="searchQuery" placeholder="Search keyword">
+            }
             else
-            {*@
+            {
                 <div class="mb-3 row">
                     <div class="col-sm-1">
-                        <label class="col-form-label" for="findGenre">Genre</label>
+                        <label class="col-form-label" for="searchGenre">Genre</label>
                     </div>
                     <div class="col-sm-3">
-                        <select id="findGenre" name="findGenre" class="form-select" aria-label="Default select example">
+                        <select id="searchGenre" name="searchGenre" class="form-select" aria-label="Default select example">
                             <option value="Action" selected>Action</option>
                             <option value="Adventure">Adventure</option>
                             <option value="Comedy">Comedy</option>
@@ -64,7 +65,7 @@
                         </select>
                     </div>
                 </div>
-@*            }*@
+            }
         </div>
         <div class="col-sm-2">
             <button type="submit" class="btn btn-primary">Find</button>
