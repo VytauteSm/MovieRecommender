@@ -1,8 +1,39 @@
-﻿@page
+﻿@*do we need this?*@
+
+@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Change search form using JavaScript";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+
+<form method="post" id="mainForm">
+
+    <div class="mb-3 row">
+        <div class="form-check">
+            <input onclick="changeSearchForm(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault1" @(Model.SearchType == "T" ? "checked" : "") value="T">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Title
+            </label>
+        </div>
+        <div class="form-check">
+            <input onclick="changeSearchForm(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault2" @(Model.SearchType == "K" ? "checked" : "") value="K">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Keyword
+            </label>
+        </div>
+        <div class="form-check">
+            <input onclick="changeSearchForm(this)" class="form-check-input" type="radio" name="searchType" id="flexRadioDefault3" @(Model.SearchType == "G" ? "checked" : "") value="G">
+            <label class="form-check-label" for="flexRadioDefault3">
+                Genre
+            </label>
+        </div>
+    </div>
+
+
+
+
+
+
+    </form>
