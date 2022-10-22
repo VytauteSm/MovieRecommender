@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MovieRecommender.Web.Helpers;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace MovieRecommender.Web.Pages
@@ -32,6 +33,8 @@ namespace MovieRecommender.Web.Pages
             var searchType = Request.Form["searchType"].ToString();
             var searchTypeSelected = Request.Form["searchTypeSelected"].ToString();
             var searchGenre = Request.Form["searchGenre"].ToString();
+
+            //query.GetRandomText(5);
 
             SearchType = searchType; //we set property to the value we receive, it will reflect visually on a page
             SelectedGenre = searchGenre;

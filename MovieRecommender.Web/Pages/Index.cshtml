@@ -49,19 +49,103 @@
                     </div>
                     <div class="col-sm-3">
                         <select id="searchGenre" name="searchGenre" class="form-select" aria-label="Default select example">
-                            <option value="Action" @Model.SearchGenre == "Action" ? "selected" : "">Action</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Comedy">Comedy</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Fantasy">Fantasy</option>
-                            <option value="Horror">Horror</option>
-                            <option value="Musicals">Musicals</option>
-                            <option value="Mystery">Mystery</option>
-                            <option value="Romance">Romance</option>
-                            <option value="ScienceFiction">Science Fiction</option>
-                            <option value="Sports">Sports</option>
-                            <option value="Thriller">Thriller</option>
-                            <option value="Western">Western</option>
+                            @if (Model.SelectedGenre == "Action") @*we need additional class*@
+                            {
+                                <option value="Action" selected>Action</option>
+                            } else
+                            {
+                                <option value="Action">Action</option>
+                            }
+                            @if (Model.SelectedGenre == "Adventure")
+                            {
+                                <option value="Adventure" selected>Adventure</option>
+                            }
+                            else
+                            {
+                                <option value="Adventure">Adventure</option>
+                            }
+                            @if (Model.SelectedGenre == "Comedy")
+                            {
+                                <option value="Comedy" selected>Comedy</option>
+                            } else
+                            {
+                                <option value="Comedy">Comedy</option>
+                            }
+                            @if (Model.SelectedGenre == "Drama")
+                            {
+                                <option value="Drama" selected>Drama</option>
+                            } else
+                            {
+                                <option value="Drama">Drama</option>
+                            }
+                            @if (Model.SelectedGenre == "Fantasy")
+                            {
+                                <option value="Fantasy" selected>Fantasy</option>
+                            } else
+                            {
+                                <option value="Fantasy">Fantasy</option>
+                            }
+                            @if (Model.SelectedGenre == "Horror")
+                            {
+                                <option value="Horror" selected>Horror</option>
+                            } else
+                            {
+                                <option value="Horror">Horror</option>
+                            }
+                            @if (Model.SelectedGenre == "Musicals")
+                            {
+                                <option value="Musicals" selected>Musicals</option>
+                            } else
+                            {
+                                <option value="Musicals">Musicals</option>
+                            }
+                            @if (Model.SelectedGenre == "Mystery")
+                            {
+                                <option value="Mystery" selected>Mystery</option>
+                            } else
+                            {
+                                <option value="Mystery">Mystery</option>
+                            }
+                            @if (Model.SelectedGenre == "Romance")
+                            {
+                                <option value="Romance" selected>Romance</option>
+                            }
+                            else
+                            {
+                                <option value="Romance">Romance</option>
+                            }
+                            @if (Model.SelectedGenre == "ScienceFiction")
+                            {
+                                <option value="ScienceFiction" selected>ScienceFiction</option>
+                            }
+                            else
+                            {
+                                <option value="ScienceFiction">ScienceFiction</option>
+                            }
+                            @if (Model.SelectedGenre == "Sports")
+                            {
+                                <option value="Sports" selected>Sports</option>
+                            }
+                            else
+                            {
+                                <option value="Sports">Sports</option>
+                            }
+                            @if (Model.SelectedGenre == "Thriller")
+                            {
+                                <option value="Thriller" selected>Thriller</option>
+                            }
+                            else
+                            {
+                                <option value="Thriller">Thriller</option>
+                            }
+                            @if (Model.SelectedGenre == "Western")
+                            {
+                                <option value="Western" selected>Western</option>
+                            }
+                            else
+                            {
+                                <option value="Western">Western</option>
+                            }
                         </select>
                     </div>
                 </div>
