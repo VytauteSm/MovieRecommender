@@ -13,5 +13,16 @@ function selectSearchType(searchType) {
 }
 
 function changeSearchForm(searchType) {
-    console.log(searchType.value);
+    //console.log(searchType.value); //we dont need to write in console anymore
+
+    const searchQuery = document.getElementById('searchQuery');
+    const searchGenreContainer = document.getElementById('searchGenreContainer');
+
+    if (searchType.value === 'T' || searchType.value === 'K') { //we compare values
+        searchQuery.style.display = 'block';
+        searchGenreContainer.style.display = 'none'; //we want to hide one and show second
+    } else {
+        searchQuery.style.display = 'none';
+        searchGenreContainer.style.display = 'block';
+    }
 }
