@@ -29,7 +29,7 @@
 	</movie>
 	<movie>
 		<title>Despicable Me 1</title>
-		<genre>Animation</genre>
+		<genre>Action</genre>
 		<keywords>
 			<keyword>minions</keyword>
 			<keyword>family</keyword>
@@ -39,7 +39,7 @@
 	</movie>
 	<movie>
 		<title>The Greatest Showman</title>
-		<genre>Musical</genre>
+		<genre>Musicals</genre>
 		<keywords>
 			<keyword>magicians</keyword>
 			<keyword>love</keyword>
@@ -139,7 +139,7 @@
 	</movie>
 	<movie>
 		<title>The Phantom of the Opera</title>
-		<genre>Music</genre>
+		<genre>Musicals</genre>
 		<keywords>
 			<keyword>opera</keyword>
 			<keyword>love</keyword>
@@ -149,7 +149,7 @@
 	</movie>
 	<movie>
 		<title>Slumdog Millionaire</title>
-		<genre>Crime</genre>
+		<genre>Adventure</genre>
 		<keywords>
 			<keyword>poverty</keyword>
 			<keyword>lotery</keyword>
