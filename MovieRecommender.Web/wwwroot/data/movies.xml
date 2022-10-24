@@ -27,4 +27,134 @@
 	</keywords>
 		<rating>5</rating>
 	</movie>
+	<movie>
+		<title>Despicable Me 1</title>
+		<genre>Animation</genre>
+		<keywords>
+			<keyword>minions</keyword>
+			<keyword>family</keyword>
+			<keyword>friendship</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>The Greatest Showman</title>
+		<genre>Musical</genre>
+		<keywords>
+			<keyword>magicians</keyword>
+			<keyword>love</keyword>
+			<keyword>show</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>Bohemian Rhapsody</title>
+		<genre>Drama</genre>
+		<keywords>
+			<keyword>music</keyword>
+			<keyword>star</keyword>
+			<keyword>show</keyword>
+		</keywords>
+		<rating>5</rating>
+	</movie>
+	<movie>
+		<title>Titanic</title>
+		<genre>Romance</genre>
+		<keywords>
+			<keyword>ships</keyword>
+			<keyword>love</keyword>
+			<keyword>disaster</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>Twilight</title>
+		<genre>Romance</genre>
+		<keywords>
+			<keyword>vampire</keyword>
+			<keyword>love</keyword>
+			<keyword>wolf</keyword>
+		</keywords>
+		<rating>3</rating>
+	</movie>
+	<movie>
+		<title>Crazy Stupid Love</title>
+		<genre>Romance</genre>
+		<keywords>
+			<keyword>family</keyword>
+			<keyword>love</keyword>
+			<keyword>dating</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>Forrest Gump</title>
+		<genre>Drama</genre>
+		<keywords>
+			<keyword>chocolate</keyword>
+			<keyword>running</keyword>
+			<keyword>vietnam war</keyword>
+		</keywords>
+		<rating>5</rating>
+	</movie>
+	<movie>
+		<title>10 Things I Hate About You</title>
+		<genre>Comedy</genre>
+		<keywords>
+			<keyword>highschool</keyword>
+			<keyword>love</keyword>
+			<keyword>gossip</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>Juno</title>
+		<genre>Comedy</genre>
+		<keywords>
+			<keyword>pregnancy</keyword>
+			<keyword>couple</keyword>
+			<keyword>school</keyword>
+		</keywords>
+		<rating>3</rating>
+	</movie>
+	<movie>
+		<title>Mr. Nobody</title>
+		<genre>Fantasy</genre>
+		<keywords>
+			<keyword>future</keyword>
+			<keyword>time</keyword>
+			<keyword>butterly effect</keyword>
+		</keywords>
+		<rating>5</rating>
+	</movie>
+	<movie>
+		<title>500 Days of Summer</title>
+		<genre>Drama</genre>
+		<keywords>
+			<keyword>breakup</keyword>
+			<keyword>love</keyword>
+			<keyword>expectation</keyword>
+		</keywords>
+		<rating>4</rating>
+	</movie>
+	<movie>
+		<title>The Phantom of the Opera</title>
+		<genre>Music</genre>
+		<keywords>
+			<keyword>opera</keyword>
+			<keyword>love</keyword>
+			<keyword>mask</keyword>
+		</keywords>
+		<rating>3</rating>
+	</movie>
+	<movie>
+		<title>Slumdog Millionaire</title>
+		<genre>Crime</genre>
+		<keywords>
+			<keyword>poverty</keyword>
+			<keyword>lotery</keyword>
+			<keyword>india</keyword>
+		</keywords>
+		<rating>5</rating>
+	</movie>
 </movies>
