@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRecommender", "MovieRecommender\MovieRecommender.csproj", "{72954D69-F894-4DC8-8ED6-0414F332F022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRecommender.Data", "MovieRecommender\MovieRecommender.Data.csproj", "{72954D69-F894-4DC8-8ED6-0414F332F022}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieRecommender.ConsoleApp", "MovieRecommender.ConsoleApp\MovieRecommender.ConsoleApp.csproj", "{0E52229C-1694-4621-9F9F-3AFCD75D45BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRecommender.Web", "MovieRecommender.Web\MovieRecommender.Web.csproj", "{01C83B9F-BCFA-46CA-8280-0A1E7FAB8340}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRecommenderScaffolding.Web", "MovieRecommenderScaffolding.Web\MovieRecommenderScaffolding.Web.csproj", "{061824DF-4399-4C7B-A8C5-A4C0DEE72D21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E52229C-1694-4621-9F9F-3AFCD75D45BB} = {0E52229C-1694-4621-9F9F-3AFCD75D45BB}
+		{72954D69-F894-4DC8-8ED6-0414F332F022} = {72954D69-F894-4DC8-8ED6-0414F332F022}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,10 @@ Global
 		{0E52229C-1694-4621-9F9F-3AFCD75D45BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E52229C-1694-4621-9F9F-3AFCD75D45BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E52229C-1694-4621-9F9F-3AFCD75D45BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01C83B9F-BCFA-46CA-8280-0A1E7FAB8340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01C83B9F-BCFA-46CA-8280-0A1E7FAB8340}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01C83B9F-BCFA-46CA-8280-0A1E7FAB8340}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01C83B9F-BCFA-46CA-8280-0A1E7FAB8340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061824DF-4399-4C7B-A8C5-A4C0DEE72D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061824DF-4399-4C7B-A8C5-A4C0DEE72D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061824DF-4399-4C7B-A8C5-A4C0DEE72D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061824DF-4399-4C7B-A8C5-A4C0DEE72D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MovieRecommender.ConsoleApp\MovieRecommender.ConsoleApp.csproj" />
-    <ProjectReference Include="..\MovieRecommender\MovieRecommender.csproj" />
+    <ProjectReference Include="..\MovieRecommender\MovieRecommender.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>

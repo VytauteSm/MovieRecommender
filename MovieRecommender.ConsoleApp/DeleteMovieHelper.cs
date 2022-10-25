@@ -1,4 +1,4 @@
-﻿using MovieRecommender;
+﻿using MovieRecommender.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

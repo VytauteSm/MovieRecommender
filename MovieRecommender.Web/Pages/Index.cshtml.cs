@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MovieRecommender.Data.Models;
 //using MovieRecommender.Web.Helpers;
 using static System.Reflection.Metadata.BlobBuilder;
 
