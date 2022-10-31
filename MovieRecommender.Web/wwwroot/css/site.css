@@ -1,18 +1,69 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+header img {
+    height: 80px;
 }
 
 body {
-  margin-bottom: 60px;
+    height: 125vh;
+    background-image: url('https://img.freepik.com/free-photo/clapperboard_23-2147775676.jpg?w=1380&t=st=1667237688~exp=1667238288~hmac=99f1964158de563dcf22ffbfb84db9b83964e140bc7960aa3aef1e7645271586');
+    background-size: cover;
+    font-family: sans-serif;
 }
+
+main {
+    color: black;
+    border-color: white;
+    /* text-shadow: 1px 2px 0 #000000;*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 900px;
+}
+
+
+
+    header .overlay {
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+    }
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: black;
+    text-shadow: 0 0 2px #fff;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: lightpink;
+    text-shadow: 0 0 4px black;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: black;
+    text-shadow: 0 0 2px #fff;
+}
+
+p {
+    color: black;
+    font-size: 30px;
+    text-shadow: 0 0 2px #000000;
+}
+
+
